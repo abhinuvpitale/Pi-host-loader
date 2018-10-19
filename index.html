@@ -1,14 +1,29 @@
-  <html>
-     <head>
-      <title>Please leave your message here! (For a change, be creative!)</title>
-     </head>
-     <body>
-        <form action="action.php" method="post">
-          Message<br>
-          <input type="text" name="field1"><br>
-          Name
-            <input type="text" name="field2"><br>
-           <input type="submit" value="Submit">
-        </form>
-     </body>
-    </html>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Please leave your message here!</title>
+  <link rel="stylesheet" href="css/main.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+</head>
+
+<body>
+  <form action="action.php" method="post">
+    <div id="nameWrapper">
+      <label for="name">Name</label>
+      <input id="name" type="text" name="field2"><br>
+    </div>
+    <div id="messageWrapper">
+      <label for="message">Message</label>
+      <input id="message" type="text" name="field1"><br>
+    </div>
+    <button class="submit" type="submit" disabled>Submit</button>
+  </form>
+
+  <script src="./js/main.js"></script>
+</body>
+
+</html>
