@@ -1,0 +1,73 @@
+/**
+ * @Author: schwarze_falke
+ * @Date:   2018-10-18T20:20:15-05:00
+ * @Last modified by:   schwarze_falke
+ * @Last modified time: 2018-10-18T21:07:39-05:00
+ */
+body { background: #9cb8b3; }
+
+h1 {
+   font: 600 1.5em/1 'Raleway', sans-serif;
+   color: rgba(0,0,0,.5);
+   text-align: center;
+   text-transform: uppercase;
+   letter-spacing: .5em;
+   position: absolute;
+   top: 5%;
+   width: 100%;
+}
+
+span, span:after {
+   font-weight: 900;
+   color: #efedce;
+   white-space: nowrap;
+   display: inline-block;
+   position: relative;
+   letter-spacing: .1em;
+   padding: .2em 0 .25em 0;
+}
+
+span {
+   font-size: 4em;
+   z-index: 100;
+   text-shadow: .04em .04em 0 #9cb8b3;
+}
+
+p {
+   color: #626258;
+   font: 600 1.5em/1 'Raleway', sans-serif;
+   text-align: center;
+   padding: 12em 0 .25em 0;
+}
+
+input[type=text], select {
+   width: 20%;
+   padding: 12px 20px;
+   margin: 8px 0;
+   display: inline-block;
+   border: 1px solid #ccc;
+   border-radius: 4px;
+   box-sizing: border-box;
+}
+
+input[type=submit] {
+   font: 600 1.5em/1 'Raleway', sans-serif;
+   width: 20%;
+   background-color: #9bf7e7;
+   color: #626258;
+   padding: 14px 20px;
+   margin: 8px 0;
+   border: none;
+   border-radius: 4px;
+   cursor: pointer;
+}
+
+input[type=submit]:hover {
+   background-color: #74ffe7;
+}
+
+div {
+   border-radius: 5px;
+   background-color: #f2f2f2;
+   padding: 20px;
+}
