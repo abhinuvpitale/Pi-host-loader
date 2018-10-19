@@ -11,6 +11,7 @@
 </head>
 
 <body>
+  <div class="background"></div>
   <form action="action.php" method="post">
     <div id="nameWrapper">
       <label for="name">Name</label>
@@ -18,9 +19,9 @@
     </div>
     <div id="messageWrapper">
       <label for="message">Message</label>
-      <input id="message" type="text" name="field1"><br>
+      <input id="message" type="text" maxlength="28" name="field1"><br>
     </div>
-    <button class="submit" type="submit" disabled>Submit</button>
+    <button class="submit" type="submit" disabled><span>Submit</span></button>
   </form>
 
   <script src="./js/main.js"></script>

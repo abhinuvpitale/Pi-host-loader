@@ -10,6 +10,25 @@ body {
   font-family: Cinzel, serif;
   font-size: 1.5em;
   letter-spacing: 0.4em;
+  overflow: hidden;
+}
+
+body .background {
+  display: none;
+}
+
+@media (min-width: 950px) {
+  body .background {
+    display: block;
+    position: absolute;
+    z-index: -1;
+    top: -50%;
+    left: 0;
+    width: 80%;
+    height: 200%;
+    background-color: #131b23;
+    border-radius: 0 50% 50% 0;
+  }
 }
 
 body form {
@@ -29,6 +48,17 @@ body form {
       -ms-flex-align: center;
           align-items: center;
   margin: 0;
+}
+
+@media (min-width: 950px) {
+  body form {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 80% auto;
+        grid-template-columns: 80% auto;
+    -ms-grid-rows: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+  }
 }
 
 body form #messageWrapper,
@@ -54,6 +84,22 @@ body form #nameWrapper {
   transition: all 0.3s ease;
 }
 
+@media (min-width: 950px) {
+  body form #messageWrapper,
+  body form #nameWrapper {
+    width: 500px;
+    height: auto;
+    cursor: auto;
+    background-color: unset;
+    -webkit-box-shadow: unset;
+            box-shadow: unset;
+    border-radius: 0;
+    display: block;
+    margin: auto;
+    font-size: 2em;
+  }
+}
+
 body form #messageWrapper input,
 body form #nameWrapper input {
   margin-top: 10px;
@@ -70,9 +116,21 @@ body form #nameWrapper input {
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 
+@media (min-width: 950px) {
+  body form #messageWrapper input,
+  body form #nameWrapper input {
+    display: block;
+  }
+}
+
 body form #messageWrapper input:focus,
 body form #nameWrapper input:focus {
   background-color: white;
+}
+
+body form #messageWrapper input#message,
+body form #nameWrapper input#message {
+  width: 200px;
 }
 
 body form #messageWrapper.active,
@@ -101,6 +159,22 @@ body form button.submit {
   padding: 10px 30px;
 }
 
+@media (min-width: 950px) {
+  body form button.submit {
+    -ms-grid-column: 2;
+    grid-column: 2;
+    -ms-grid-row: 1;
+    -ms-grid-row-span: 2;
+    grid-row: 1 / 3;
+  }
+  body form button.submit span {
+    -webkit-writing-mode: vertical-rl;
+        -ms-writing-mode: tb-rl;
+            writing-mode: vertical-rl;
+    text-orientation: upright;
+  }
+}
+
 body form button[disabled].submit::before {
   position: absolute;
   content: " ";
@@ -111,6 +185,13 @@ body form button[disabled].submit::before {
   left: 50%;
   -webkit-transform: translateX(-50%) translateY(-50%);
           transform: translateX(-50%) translateY(-50%);
+}
+
+@media (min-width: 950px) {
+  body form button[disabled].submit::before {
+    width: 1px;
+    height: 90%;
+  }
 }
 
 body form button.submit::before {
