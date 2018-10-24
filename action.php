@@ -8,6 +8,6 @@
     echo $string;
     fwrite($fh,$string); // Write information to the file
     fclose($fh); // Close the file
-	echo exec('python shruPi.py')
+	echo exec('python action.py')
  }
 ?>
